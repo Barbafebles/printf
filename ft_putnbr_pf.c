@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_putnbr_pf.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfebles- <bfebles-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/18 16:26:25 by bfebles-          #+#    #+#             */
-/*   Updated: 2023/05/18 22:16:48 by bfebles-         ###   ########.fr       */
+/*   Created: 2023/05/18 22:22:18 by bfebles-          #+#    #+#             */
+/*   Updated: 2023/05/18 22:32:41 by bfebles-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include <stdarg.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
+#include "printf.h"
 
-int ft_putchar_pf(char c);
-
-#endif
+void ft_putnbr_pf(int n)
+{
+    int counter;
+    
+    counter = 0;
+    if (n == -2147483648)
+    {
+        n = -n;
+        
+    }
+}
