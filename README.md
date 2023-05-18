@@ -19,5 +19,3 @@
 <p>Este proyecto es un trabajo individual realizado como parte de la formación en 42 School y no se aceptarán contribuciones externas.</p>
 
 <p>Para obtener más información sobre 42 School, visita su <a href="https://www.42.fr/">sitio web</a>.</p>
-
-<p>Este proyecto se distribuye bajo la <a href="LICENSE">licencia MIT</a>.</p>
