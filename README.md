@@ -1,5 +1,3 @@
-# printf
-
 <h1>Proyecto Printf</h1>
 
 <p>Este es el proyecto Printf realizado como parte del programa de formación de 42 School.</p>
