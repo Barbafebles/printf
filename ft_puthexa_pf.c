@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_puthexa_pf.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfebles- <bfebles-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/18 16:26:25 by bfebles-          #+#    #+#             */
-/*   Updated: 2023/05/19 15:33:43 by bfebles-         ###   ########.fr       */
+/*   Created: 2023/05/19 16:12:38 by bfebles-          #+#    #+#             */
+/*   Updated: 2023/05/19 16:30:23 by bfebles-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include <stdarg.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
+#include "ft_printf.h"
 
-int ft_putchar_pf(char c);
-int ft_putnbr_pf(int n);
-
-#endif
+int ft_puthexa_pf(unsigned int hexa, char form)
+{
+    int counter;
+    
+    counter = 0;
+    
+    if (hexa >= 16)
+    {
+        counter += ft_putchar_pf(hexa / 16, form);
+        counter += ft_
+    }
+}

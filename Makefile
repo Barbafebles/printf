@@ -6,7 +6,7 @@
 #    By: bfebles- <bfebles-@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/18 15:53:28 by bfebles-          #+#    #+#              #
-#    Updated: 2023/05/18 22:17:11 by bfebles-         ###   ########.fr        #
+#    Updated: 2023/05/19 15:42:47 by bfebles-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 AR = ar -rcs
 SRCS = ft_putchar_pf.c\
+		ft_putnbr_pf.c\
 
 
 
