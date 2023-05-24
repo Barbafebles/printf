@@ -6,7 +6,7 @@
 /*   By: bfebles- <bfebles-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 16:26:25 by bfebles-          #+#    #+#             */
-/*   Updated: 2023/05/20 21:50:49 by bfebles-         ###   ########.fr       */
+/*   Updated: 2023/05/23 16:30:34 by bfebles-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ int ft_putchar_pf(char c);
 int ft_putnbr_pf(int n);
 int	ft_puthexa_pf(unsigned int hexa, char form);
 int ft_putstr_pf(char *str);
+int ft_putptr_pf (unsigned long long ptr);
+int ft_putunit_pf(unsigned int n);
 
 #endif

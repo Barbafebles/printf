@@ -1,51 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_puthexa_pf.c                                    :+:      :+:    :+:   */
+/*   ft_puthexa_ptr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfebles- <bfebles-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/19 16:12:38 by bfebles-          #+#    #+#             */
-/*   Updated: 2023/05/23 16:09:34 by bfebles-         ###   ########.fr       */
+/*   Created: 2023/05/22 16:01:58 by bfebles-          #+#    #+#             */
+/*   Updated: 2023/05/22 16:16:34 by bfebles-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-/* function converts a hexadecimal value into its ASCII character representation and prints them one by one, 
- using recursion to handle individual digits. */
-int	ft_puthexa_pf(unsigned int hexa, char form)
+int	ft_puthexa_ptr(unsigned long long hexa)
 {
 	int	counter;
 
 	counter = 0;
 	if (hexa >= 16)
 	{
-		counter += ft_puthexa_pf(hexa / 16, form);
-		counter += ft_puthexa_pf(hexa % 16, form);
+		counter += ft_puthexa_pf(hexa / 16);
+		counter += ft_puthexa_pf(hexa % 16);
 	}
 	else
 	{
 		if (hexa <= 9)
 			counter += ft_putchar_pf(hexa + 48);
 		else
-		{
-			if (form == 'X')
-			counter += ft_putchar_pf(hexa - 10 + 'A');
-            else if (form == 'x')
             counter += ft_putchar_pf(hexa - 10 + 'a');
-		}
 	}
     return(counter);
 }
-/*
-int main()
+int ft_putptr_pf (unsigned long long ptr)
 {
-    unsigned int num;
-    num = 12;
-    char form;
-    form = 'X';
+	int counter;
+	counter = 0;
 
-	printf("Este es el numero hexa: %X\n", num);
-    return(0);
+	counter += write(1, '0x', 2);
+	counter += ft_puthexa_ptr(ptr);
+	return(0);
 }
-*/
