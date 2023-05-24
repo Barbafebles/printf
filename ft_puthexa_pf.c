@@ -6,13 +6,15 @@
 /*   By: bfebles- <bfebles-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:12:38 by bfebles-          #+#    #+#             */
-/*   Updated: 2023/05/23 16:09:34 by bfebles-         ###   ########.fr       */
+/*   Updated: 2023/05/24 12:28:10 by bfebles-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-/* function converts a hexadecimal value into its ASCII character representation and prints them one by one, 
- using recursion to handle individual digits. */
+
+/* function converts a hexadecimal value into its ASCII character 
+representation and prints them one by one, using 
+recursion to handle individual digits. */
 int	ft_puthexa_pf(unsigned int hexa, char form)
 {
 	int	counter;
@@ -30,21 +32,22 @@ int	ft_puthexa_pf(unsigned int hexa, char form)
 		else
 		{
 			if (form == 'X')
-			counter += ft_putchar_pf(hexa - 10 + 'A');
-            else if (form == 'x')
-            counter += ft_putchar_pf(hexa - 10 + 'a');
+				counter += ft_putchar_pf(hexa - 10 + 'A');
+			else if (form == 'x')
+				counter += ft_putchar_pf(hexa - 10 + 'a');
 		}
 	}
-    return(counter);
+	return (counter);
 }
+
 /*
-int main()
+int	main(void)
 {
     unsigned int num;
-    num = 12;
     char form;
-    form = 'X';
 
+    num = 12;
+    form = 'X';
 	printf("Este es el numero hexa: %X\n", num);
     return(0);
 }

@@ -6,7 +6,7 @@
 #    By: bfebles- <bfebles-@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/18 15:53:28 by bfebles-          #+#    #+#              #
-#    Updated: 2023/05/20 20:48:22 by bfebles-         ###   ########.fr        #
+#    Updated: 2023/05/24 13:04:18 by bfebles-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,10 @@ AR = ar -rcs
 SRCS = ft_putchar_pf.c\
 		ft_putnbr_pf.c\
 		ft_puthexa_pf.c\
-		
+		ft_putunit_pf.c\
+		ft_putstr_pf.c\
+		ft_putptr_pf.c\
+		ft_printf.c\
 
 
 OBJS = $(SRCS:.c=.o)
@@ -28,9 +31,6 @@ all: $(NAME)
 
 $(NAME): $(OBJS) $(LIB)
 	$(AR) $(NAME) $(OBJS)
-
-%.o:%.c
-	$(CC) -c $(CFLAGS) $^
 
 clean:
 	$(RM) $(OBJS)
